@@ -6,7 +6,7 @@ class CSV_reader:
     @staticmethod
 
     """
-    read the csv file and return a dataframe to be used in the subsequent classes 
+    Read the csv file and return a dataframe to be used in the subsequent classes 
     """
     
     def read_csv(file_path):
