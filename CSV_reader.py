@@ -12,7 +12,7 @@ class CSVToDataFrame:
         if self.data_frame is not None:
             print(self.data_frame.head())
 
-csv_to_df = CSVToDataFrame('Wallaby Medium Input 1.csv')
-csv_to_df.read_csv()
-csv_to_df.display()
+# csv_to_df = CSVToDataFrame('Wallaby Medium Input 1.csv')
+# csv_to_df.read_csv()
+# csv_to_df.display()
 
