@@ -1,4 +1,4 @@
-import pandas as pd
+import math
 
 
 class MGRSFormatter:
@@ -6,7 +6,7 @@ class MGRSFormatter:
 
     @staticmethod
     def mgrs_formatter(dataframe):
-        number_of_points = dataframe.len()
+        number_of_points = len(dataframe)
         result = list()
         for i in range(number_of_points):
             latitude = dataframe.loc[i, 'Latitude']
@@ -30,15 +30,21 @@ class MGRSFormatter:
             square_id += "V"
         latitude = MGRSFormatter.latlon_tostring(latitude)
         longitude = MGRSFormatter.latlon_tostring(longitude)
+        result_string += square_id
         result_string += longitude
         result_string += latitude
         return result_string
 
     @staticmethod
     def latlon_tostring(value):
-        if value > 100:
+        if value >= 100:
             value -= 100
             value *= 10
         else:
             value *= 10
-        return str(value)
+        result = str(int(value))
+        if value < 100:
+            result = "0" + result
+        if value == 0:
+            result = "000"
+        return result
