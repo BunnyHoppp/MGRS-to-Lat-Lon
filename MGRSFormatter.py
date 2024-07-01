@@ -25,11 +25,7 @@ class MGRSFormatter:
         https://mappingsupport.com/p2/gissurfer.php?center=14SQH05239974&zoom=4&basemap=USA_basemap
         https://www.maptools.com/tutorials/mgrs/quick_guide                
     """
-
-    """
-    MGRS: "Grid_Zone" + "100,000 meter Square ID" + "Numerical Coordinates" 
-    """
-    
+  
     """
     mgrs_string (already added): None 
     mgrs_string (to add): "Grid_Zone"
