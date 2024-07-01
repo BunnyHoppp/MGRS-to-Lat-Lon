@@ -3,6 +3,10 @@ import mgrs
 
 class MGRSConverter:
     """
+    Purpose: Convert MGRS to (Lat,Lon) 
+    """
+    
+    """
     Convert mgrs (string) into mgrs_obj 
     """
     mgrs_obj = mgrs.MGRS()
