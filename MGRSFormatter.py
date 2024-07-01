@@ -5,7 +5,7 @@ class MGRSFormatter:
 
     """
     Purpose: Formatting our Latitude, Longitude read from the given map (data from csv file) into MGRS. 
-    MGRS: Grid_Zone + 100,000 meter Square ID + Numerical Coordinates 
+    MGRS: Grid_Zone + 100,000 meter Square ID + 100 meter square  
     
     Using DALLAS as a deployment area as an example: 
         Latitude, Longitude read from the given map (data from csv file): 101.5, 103.0 
@@ -17,7 +17,7 @@ class MGRSFormatter:
             we are focusing on the 4 Square IDs: JA, KA, JV, KV  
             K: Latitude >100 
             A: Longitude >100
-        "015030" -> Further zoomed in more within a 100 meter square (Numerical Coordinates) 
+        "015030" -> Further zoomed in more within a 100 meter square 
             "015": Latitude 101.5 -> remove the first 1 (-100) and take out the decimal (*10)    
             "030": Longitude 103                
         
@@ -26,17 +26,9 @@ class MGRSFormatter:
         https://www.maptools.com/tutorials/mgrs/quick_guide                
     """
   
-    """
-    mgrs_string (already added): None 
-    mgrs_string (to add): "Grid_Zone"
-    """
     Grid_Zone = "56K"
    
     @staticmethod
-    """
-    mgrs_string (already added): "Grid_Zone" 
-    mgrs_string (to add): "Grid_Zone"
-    """
     def mgrs_formatter(dataframe):
         number_of_points = len(dataframe)
         result = list()
@@ -49,6 +41,13 @@ class MGRSFormatter:
 
     @staticmethod
     def mgrs_tostring(latitude, longitude):
+        """
+        Agrs: 
+            latitude: 
+            longitude: 
+        Returns: 
+            result_string: 
+        """
         result_string = MGRSFormatter.Grid_Zone
         square_id = ""
         if longitude >= 100:
@@ -68,7 +67,24 @@ class MGRSFormatter:
         return result_string
 
     @staticmethod
+   
     def latlon_tostring(value):
+         """
+         Args: 
+             value: latitude/longitude derived from the map 
+         Returns: 
+             result: numerical values which represents the 100 meter square that the point lies in 
+         How is it achieved: 
+             Example: converting 101.5 to "015"
+             •  remove the first 1 (-100), if any 
+             •  remove the decimal (*10) 
+             •  at this point, we could end up having a value <10. 
+                 -> Example: 101.5 
+                     ~ 101.5 - 100 = 1.5 
+                     ~ 1.5 * 10 = 15 (not in the required format) 
+                     ~ convert to string: 15 -> "15" 
+                     ~ "0" + "15" = "015"  
+         """
         if value >= 100:
             value -= 100
             value *= 10
