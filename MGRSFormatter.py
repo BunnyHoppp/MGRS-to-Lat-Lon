@@ -30,6 +30,16 @@ class MGRSFormatter:
    
     @staticmethod
     def mgrs_formatter(dataframe):
+        """ 
+        Converts the Latitude and Longitude in the dataframe (read from csv file) to a list of mgrs_string 
+        using the helper function mgrs_tostring 
+        
+        Args: 
+            dataframe: Latitude and Longitude (read from csv file)  
+
+        Returns: 
+            result: a list of mgrs_string          
+        """
         number_of_points = len(dataframe)
         result = list()
         for i in range(number_of_points):
@@ -42,11 +52,25 @@ class MGRSFormatter:
     @staticmethod
     def mgrs_tostring(latitude, longitude):
         """
+        Convert 1 pair of latitude and longitude to 1 result_string 
+        using the helper function latlon_tostring.    
+        
         Agrs: 
-            latitude: 
-            longitude: 
+            latitude: top-down of map  
+            longitude: left-right of map 
         Returns: 
-            result_string: 
+            result_string: mgrs_string 
+
+        From Args, how do we get our output?: 
+            1. Initialise result_string using Grid_Zone.  
+            2. Evaluate the square_id 
+                square_id: 100,000 meter Square ID
+            3. Find a string of numerical values which represent the 100 meter square that the point lies in 
+                using a helper function latlon_tostring 
+                latitude and longitude is evaluated individually.  
+            4. To result_string, add in this sequence: square_id, longitude, latitude.   
+                Note that result_string already contained Grid_Zone which was already initialised in Step 1.   
+                
         """
         result_string = MGRSFormatter.Grid_Zone
         square_id = ""
@@ -73,8 +97,8 @@ class MGRSFormatter:
          Args: 
              value: latitude/longitude derived from the map 
          Returns: 
-             result: numerical values which represents the 100 meter square that the point lies in 
-         How is it achieved: 
+             result: numerical values which represent the 100 meter square that the point lies in 
+         From Args, how do we get our output?: 
              Example: converting 101.5 to "015"
              •  remove the first 1 (-100), if any 
              •  remove the decimal (*10) 
