@@ -16,8 +16,5 @@ class MGRSConverter:
 
     @staticmethod
     def mgrs_tolatlon(mgrs_string):
-        try:
-            result = MGRSConverter.mgrs_obj.toLatLon(mgrs_string)
-        except:
-            result = None
+        result = MGRSConverter.mgrs_obj.toLatLon(mgrs_string)
         return result

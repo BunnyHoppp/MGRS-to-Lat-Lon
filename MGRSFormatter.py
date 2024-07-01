@@ -43,8 +43,9 @@ class MGRSFormatter:
         else:
             value *= 10
         result = str(int(value))
-        if value < 100:
-            result = "0" + result
-        if value == 0:
-            result = "000"
+        while True:
+            if len(result) < 3:
+                result = "0" + result
+            else:
+                break
         return result
