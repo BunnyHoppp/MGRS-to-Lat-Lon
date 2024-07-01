@@ -2,6 +2,32 @@ import math
 
 
 class MGRSFormatter:
+
+    """
+    Purpose: Formatting our Latitude, Longitude read from the given map (data from csv file) into MGRS. 
+    Using DALLAS as a deployment area as an example: 
+        Latitude, Longitude read from the given map (data from csv file): 101.5, 103.0 
+        MGRS: 56KKA015030 
+
+    Explanation: 
+        "56K" -> Grid Zone  
+        "KA" -> 100,000 meter Square ID 
+            we are focusing on the 4 Square IDs: JA, KA, JV, KV  
+            K - Latitude >100 
+            A - Longitude >100
+        "015030" -> Further zoomed in more within a 100 meter square 
+        "015" 
+        "030"
+            
+            
+        Numerical Coordinates: 
+        
+        Reference: 
+        https://mappingsupport.com/p2/gissurfer.php?center=14SQH05239974&zoom=4&basemap=USA_basemap
+        https://www.maptools.com/tutorials/mgrs/quick_guide
+        
+        
+    """
     Grid_Zone = "56K"
 
     @staticmethod
