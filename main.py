@@ -22,6 +22,8 @@ class main:
         self.coordinate_data = None
         self.mgrs_list = None
         self.latlon_list = None
+        self.lat_list = None
+        self.lon_list = None
         self.output_csv = None
 
     def read_csv(self):
@@ -52,10 +54,14 @@ class main:
          to convert the MGRS Strings into Coordinates
 
         Updates the latlon_list with a List of latlon tuples
+        Updates the lat_list with a list of latitudes
+        Updates the lon_list with a list of longitudes
         """
 
         print("start convert")
         self.latlon_list = MGRSConverter.mgrs_converter(self.mgrs_list)
+        self.lat_list = self.latlon_list[0]
+        self.lon_list = self.latlon_list[1]
         print(self.latlon_list)
 
         print("end convert")
@@ -90,7 +96,8 @@ class main:
         self.format_mgrs()
         self.convert_mgrs()
         self.write_to_dataframe(self.coordinate_data, "MGRS", self.mgrs_list)
-        self.write_to_dataframe(self.coordinate_data, "Coordinates", self.latlon_list)
+        self.write_to_dataframe(self.coordinate_data,"Revised_Latitude", self.lat_list)
+        self.write_to_dataframe(self.coordinate_data, "Revised_Longitude", self.lon_list)
         self.write_csv()
 
 

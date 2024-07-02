@@ -14,21 +14,30 @@ class MGRSConverter:
 
     @staticmethod
     def mgrs_converter(mgrs_list):
-        """Convert a List of MGRS coordinates to a List of (Latitude, Longitude) using a helper function mgrs_tolatlon
+        """Convert a List of MGRS coordinates to a List of [revised_lat_list, revised_long_list] using a helper function mgrs_tolatlon
 
         Args:
             mgrs_list: a List of MGRS coordinates
 
         Returns:
-            result_list: a List of (Latitude, Longitude)
+            result_list: a List of (list of revised latitude, list of revised longitude)
         """
 
         list_len = len(mgrs_list)
+        revised_lat_list = list()
+        revised_long_list = list()
         result_list = list()
         for i in range(list_len):
             mgrs_string = mgrs_list[i]
             latlon_pair = MGRSConverter.mgrs_tolatlon(mgrs_string)
-            result_list.append(latlon_pair)
+            if latlon_pair == None:
+                revised_long_list.append(None)
+                revised_lat_list.append(None)
+            else:
+                revised_lat_list.append(latlon_pair[0])
+                revised_long_list.append(latlon_pair[1])
+        result_list.append(revised_lat_list)
+        result_list.append(revised_long_list)
         return result_list
 
     @staticmethod
