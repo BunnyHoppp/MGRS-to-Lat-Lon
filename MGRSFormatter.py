@@ -1,45 +1,57 @@
-import math
+import pandas as pd
 
 
 class MGRSFormatter:
+    """Format Latitude, Longitude (from csv file) into MGRS.
+    MGRS: Grid_Zone + 100,000 meter Square ID + 100 meter square
 
-    """
-    Purpose: Formatting our Latitude, Longitude read from the given map (data from csv file) into MGRS. 
-    MGRS: Grid_Zone + 100,000 meter Square ID + 100 meter square  
-    
-    Using DALLAS as a deployment area as an example: 
-        Latitude, Longitude read from the given map (data from csv file): 101.5, 103.0 
-        MGRS: 56KKA015030 
+    Example (DALLAS deployment area):
+        Latitude, Longitude (csv input): 101.5, 103.0
+        MGRS: 56KKA015030
 
-    Explanation: 
-        "56K" -> Grid Zone  
-        "KA" -> 100,000 meter Square ID 
-            we are focusing on the 4 Square IDs: JA, KA, JV, KV  
-            K: Latitude >100 
+    Explanation:
+        "56K" -> Grid Zone
+        "KA" -> 100,000 meter Square ID (i.e., JA, KA, JV, KV)
+            K: Latitude >100
             A: Longitude >100
-        "015030" -> Further zoomed in more within a 100 meter square 
-            "015": Latitude 101.5 -> remove the first 1 (-100) and take out the decimal (*10)    
-            "030": Longitude 103                
-        
-        Reference: 
-        https://mappingsupport.com/p2/gissurfer.php?center=14SQH05239974&zoom=4&basemap=USA_basemap
-        https://www.maptools.com/tutorials/mgrs/quick_guide                
+        "015030" -> 100 meter square
+            "015": Latitude 101.5 -> remove the first 1 (-100) and take out the decimal (*10)
+            "030": Longitude 103
+
+    Precision:
+    10,000m - 56K KV 1 1
+    1000m   - 56K KV 10 10
+    100m    - 56K KV 120 340
+    10m     - 56K KV 1233 3453
+    1m      - 56K KV 12343 45673
+
+    Static Attributes:
+    Grid_zone: This is the first 3 characters of the MGRS String. 56K is standard for the relevant map
+    Accuracy: This shows the number of characters we need for the values in the last 2 segments of the MGRS String
+    Accuracy of 3 means the precision is at 100m. Eg of MGRS String is 56K KV 120 340.
+
+
+    Reference:
+    https://mappingsupport.com/p2/gissurfer.php?center=14SQH05239974&zoom=4&basemap=USA_basemap
+    https://www.maptools.com/tutorials/mgrs/quick_guide
     """
-  
+
     Grid_Zone = "56K"
+    Accuracy = 3
    
     @staticmethod
     def mgrs_formatter(dataframe):
-        """ 
-        Converts the Latitude and Longitude in the dataframe (read from csv file) to a list of mgrs_string 
-        using the helper function mgrs_tostring 
-        
-        Args: 
-            dataframe: Latitude and Longitude (read from csv file)  
-
-        Returns: 
-            result: a list of mgrs_string          
         """
+        Convert the Latitude and Longitude (csv input) to a list of mgrs_string
+        using the helper function mgrs_tostring
+
+        Args:
+            dataframe: Latitude and Longitude (read from csv file)
+
+        Returns:
+            result: a list of mgrs_string
+        """
+        
         number_of_points = len(dataframe)
         result = list()
         for i in range(number_of_points):
@@ -51,26 +63,27 @@ class MGRSFormatter:
 
     @staticmethod
     def mgrs_tostring(latitude, longitude):
-        """
-        Convert 1 pair of latitude and longitude to 1 result_string 
-        using the helper function latlon_tostring.    
-        
-        Agrs: 
-            latitude: top-down of map  
-            longitude: left-right of map 
-        Returns: 
-            result_string: mgrs_string 
+        """ Convert 1 pair of latitude and longitude into 1 MGRS string using the helper function latlon_tostring.
 
-        From Args, how do we get our output?: 
-            1. Initialise result_string using Grid_Zone.  
-            2. Evaluate the square_id 
-                square_id: 100,000 meter Square ID
-            3. Find a string of numerical values which represent the 100 meter square that the point lies in 
-                using a helper function latlon_tostring 
-                latitude and longitude is evaluated individually.  
-            4. To result_string, add in this sequence: square_id, longitude, latitude.   
-                Note that result_string already contained Grid_Zone which was already initialised in Step 1.
+        Args:
+            latitude: Latitude value (top-down of map)
+            longitude: Longitude value (left-right of map)
+
+        Returns:
+            result_string: MGRS string
+
+        Steps to generate the output:
+            1. Initialize result_string with the Grid Zone.
+            2. Determine square_id (100,000 meter Square ID).
+            3. Determine a string of numerical values representing the 100-meter square where the point lies
+                using latlon_tostring.
+               - Both latitude and longitude are evaluated individually.
+            4. Add to result_string in this sequence: square_id, longitude, latitude.
+               - Note: result_string is already initialized with Grid Zone from Step 1.
         """
+
+        if pd.isna(latitude) or pd.isna(longitude):
+            return None
         result_string = MGRSFormatter.Grid_Zone
         square_id = ""
         if longitude >= 100:
@@ -89,32 +102,33 @@ class MGRSFormatter:
         result_string += latitude
         return result_string
 
-    """
-        Args: 
-            value: latitude/longitude derived from the map 
-        Returns: 
-            result: numerical values which represent the 100 meter square that the point lies in 
-        From Args, how do we get our output?: Example: converting 101.5 to "015"
-        - remove the first 1 (-100), if any 
-        -  remove the decimal (*10) 
-        - at this point, we could end up having a value <10.0 ("100"), for example value = 5 ("50")  
-           -> Example: 101.5 
-              - 101.5 - 100 = 1.5 
-              - 1.5 * 10 = 15 (not in the required format) 
-             - convert to string: 15 -> "15" 
-              - "0" + "15" = "015"  
-        """
+
     @staticmethod
     def latlon_tostring(value):
+        """
+        Args:
+            value: latitude/longitude derived from map
+        Returns:
+            result: numerical values which represent the 100 meter square that the point lies in
+        Steps to generate the output:
+            - if value > 100, -100
+            - *10 to resulting value
+            - if resulting value <10.0 ("100"), for example value = 5 ("50")
 
-        if value >= 100:
-            value -= 100
-            value *= 10
-        else:
-            value *= 10
-        result = str(int(value))
+        Example: converting 101.5 to "015"
+            - 101.5 - 100 = 1.5
+            - 1.5 * 10 = 15 (not in the required format)
+            - convert to string: 15 -> "15"
+            - "0" + "15" = "015"
+        """
+        decimal_points = MGRSFormatter.Accuracy - 2
+        result_int = value
+        if result_int >= 100:
+            result_int -= 100
+        result_int *= (pow(10, decimal_points))
+        result = str(int(result_int))
         while True:
-            if len(result) < 3:
+            if len(result) < MGRSFormatter.Accuracy:
                 result = "0" + result
             else:
                 break
