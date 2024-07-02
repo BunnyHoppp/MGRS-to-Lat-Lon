@@ -14,7 +14,8 @@ class MGRSConverter:
 
     @staticmethod
     def mgrs_converter(mgrs_list):
-        """Convert a List of MGRS coordinates to a List of [revised_lat_list, revised_long_list] using a helper function mgrs_tolatlon
+        """Convert a List of MGRS coordinates to a List[revised_lat_list, revised_long_list]
+        using a helper function mgrs_tolatlon
 
         Args:
             mgrs_list: a List of MGRS coordinates

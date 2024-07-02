@@ -14,7 +14,9 @@ class main:
         raw_data: raw .csv file
         coordinate_data: Data frame containing the initial "Latitude" and "Longitude" values
         mgrs_list: List containing the MGRS strings in the same order as the data frame
-        latlon_list: List containing Tuples of (latitude, longitude) from the standard geographical coordinates
+        latlon_list: List containing list of latitude and list of longitude.
+        lat_list: List of revised Latitudes
+        long_list: List of revised longitudes
         output_csv: output .csv file
         """
 
@@ -32,10 +34,10 @@ class main:
         Updates coordinate_data with the Data frame
         """
 
-        print("start read")
+        # print("start read")
         self.coordinate_data = DataFrameHandler.read_csv(self.raw_data)
-        print("end read")
-        print(self.coordinate_data)
+        # print("end read")
+        # print(self.coordinate_data)
 
     def format_mgrs(self):
         """ Call the method from MGRSFormatter with the initial data frame as an argument
@@ -44,27 +46,28 @@ class main:
         Updates the mgrs_list with a List of MGRS String values
         """
 
-        print("start format")
+        # print("start format")
         self.mgrs_list = MGRSFormatter.mgrs_formatter(self.coordinate_data)
-        print("end format")
-        print(self.mgrs_list)
+        # print(self.mgrs_list)
+        # print("end format")
 
     def convert_mgrs(self):
         """ Call the method from MGRSConverter with the mgrs_list as the argument
          to convert the MGRS Strings into Coordinates
 
-        Updates the latlon_list with a List of latlon tuples
+        Updates the latlon_list with a Pair of List of latitude and List of Longitude
         Updates the lat_list with a list of latitudes
         Updates the lon_list with a list of longitudes
         """
 
-        print("start convert")
+        # print("start convert")
         self.latlon_list = MGRSConverter.mgrs_converter(self.mgrs_list)
         self.lat_list = self.latlon_list[0]
         self.lon_list = self.latlon_list[1]
-        print(self.latlon_list)
-
-        print("end convert")
+        # print(self.latlon_list)
+        # print(self.lat_list)
+        # print(self.lon_list)
+        # print("end convert")
 
     def write_to_dataframe(self, data_frame, column_name, column_data):
         """ Call the method from DataFrameHandler to add the new column into the data frame
