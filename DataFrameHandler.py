@@ -7,6 +7,10 @@ class DataFrameHandler:
     @staticmethod
     def read_csv(file_path):
         data_frame = pd.read_csv(file_path)
+        if "Latitude" not in data_frame.columns:
+            raise Exception("Latitude not present in this file")
+        if "Longitude" not in data_frame.columns:
+            raise Exception("Longitude not present in this file")
         return data_frame
 
     @staticmethod

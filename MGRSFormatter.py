@@ -1,3 +1,6 @@
+import pandas as pd
+
+
 class MGRSFormatter:
     Grid_Zone = "56K"
     Accuracy = 3
@@ -15,6 +18,8 @@ class MGRSFormatter:
 
     @staticmethod
     def mgrs_tostring(latitude, longitude):
+        if pd.isna(latitude) or pd.isna(longitude):
+            return None
         result_string = MGRSFormatter.Grid_Zone
         square_id = ""
         if longitude >= 100:
