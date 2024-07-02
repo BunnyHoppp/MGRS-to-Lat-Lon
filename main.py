@@ -35,6 +35,8 @@ class main:
         """
         print("start convert")
         self.latlon_list = MGRSConverter.mgrs_converter(self.mgrs_list)
+        print(self.latlon_list)
+
         print("end convert")
 
     def run_whole_thing(self):
@@ -43,7 +45,8 @@ class main:
         self.read_csv()
         self.format_mgrs()
         self.convert_mgrs()
-        print(self.latlon_list)
+        self.coordinate_list ["latlon_list"] = self.latlon_list
+        print(self.coordinate_list)
 
 if __name__ == '__main__':
     """run     

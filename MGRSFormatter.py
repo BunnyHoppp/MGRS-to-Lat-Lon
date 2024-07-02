@@ -69,8 +69,7 @@ class MGRSFormatter:
                 using a helper function latlon_tostring 
                 latitude and longitude is evaluated individually.  
             4. To result_string, add in this sequence: square_id, longitude, latitude.   
-                Note that result_string already contained Grid_Zone which was already initialised in Step 1.   
-                
+                Note that result_string already contained Grid_Zone which was already initialised in Step 1.
         """
         result_string = MGRSFormatter.Grid_Zone
         square_id = ""
@@ -90,25 +89,24 @@ class MGRSFormatter:
         result_string += latitude
         return result_string
 
+    """
+        Args: 
+            value: latitude/longitude derived from the map 
+        Returns: 
+            result: numerical values which represent the 100 meter square that the point lies in 
+        From Args, how do we get our output?: Example: converting 101.5 to "015"
+        - remove the first 1 (-100), if any 
+        -  remove the decimal (*10) 
+        - at this point, we could end up having a value <10.0 ("100"), for example value = 5 ("50")  
+           -> Example: 101.5 
+              - 101.5 - 100 = 1.5 
+              - 1.5 * 10 = 15 (not in the required format) 
+             - convert to string: 15 -> "15" 
+              - "0" + "15" = "015"  
+        """
     @staticmethod
-   
     def latlon_tostring(value):
-         """
-         Args: 
-             value: latitude/longitude derived from the map 
-         Returns: 
-             result: numerical values which represent the 100 meter square that the point lies in 
-         From Args, how do we get our output?: 
-             Example: converting 101.5 to "015"
-             •  remove the first 1 (-100), if any 
-             •  remove the decimal (*10) 
-             •  at this point, we could end up having a value <10.0 ("100"), for example value = 5 ("50")  
-                 -> Example: 101.5 
-                     ~ 101.5 - 100 = 1.5 
-                     ~ 1.5 * 10 = 15 (not in the required format) 
-                     ~ convert to string: 15 -> "15" 
-                     ~ "0" + "15" = "015"  
-         """
+
         if value >= 100:
             value -= 100
             value *= 10
