@@ -49,8 +49,9 @@ class DataFrameHandler:
         :param data_frame: Data Frame for columns to be added to.
         :param column_name: String name for column.
         :param column_data: List of data for the column.
-        
+
         :return: A data frame with added columns.
         """
+
         data_frame.loc[:, column_name] = column_data
         return data_frame
