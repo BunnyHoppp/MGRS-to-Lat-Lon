@@ -102,7 +102,7 @@ class MGRSFormatter:
              Example: converting 101.5 to "015"
              •  remove the first 1 (-100), if any 
              •  remove the decimal (*10) 
-             •  at this point, we could end up having a value <10. 
+             •  at this point, we could end up having a value <10.0 ("100"), for example value = 5 ("50")  
                  -> Example: 101.5 
                      ~ 101.5 - 100 = 1.5 
                      ~ 1.5 * 10 = 15 (not in the required format) 
