@@ -38,8 +38,7 @@ class main:
         print("end convert")
 
     def run_whole_thing(self):
-        """
-        run everything: lat/lon in csv -> mgrs -> latitude/longitude 
+        """ run everything: lat/lon in csv -> mgrs -> latitude/longitude 
         """
         self.read_csv()
         self.format_mgrs()
