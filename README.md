@@ -16,6 +16,12 @@ To create a new csv with columns added at the end including the standard geograp
 
 A new file will be created in the 'output' folder.
 
+**Missing Data**
+
+If the .csv file does not have columns named "Latitude" and "Longitude", an exception will be raised.
+
+If the values under those columns are missing, output values will be empty as well.
+
 **Packages used**
 
 pandas - to read and write .csv
