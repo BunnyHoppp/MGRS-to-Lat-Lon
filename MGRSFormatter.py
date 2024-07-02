@@ -102,8 +102,25 @@ class MGRSFormatter:
         result_string += latitude
         return result_string
 
+
     @staticmethod
     def latlon_tostring(value):
+        """
+        Args:
+            value: latitude/longitude derived from map
+        Returns:
+            result: numerical values which represent the 100 meter square that the point lies in
+        Steps to generate the output:
+            - if value > 100, -100
+            - *10 to resulting value
+            - if resulting value <10.0 ("100"), for example value = 5 ("50")
+
+        Example: converting 101.5 to "015"
+            - 101.5 - 100 = 1.5
+            - 1.5 * 10 = 15 (not in the required format)
+            - convert to string: 15 -> "15"
+            - "0" + "15" = "015"
+        """
         decimal_points = MGRSFormatter.Accuracy - 2
         result_int = value
         if result_int >= 100:
