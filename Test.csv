@@ -1,7 +1,7 @@
 ﻿Component ID,Component Type,Deployment Area,Longitude,Latitude
-CANBERRA,Deployment Area,CANBERRA,,35.5
-REINDEER,Deployment Area,REINDEER,,134
-MONTY,Deployment Area,MONTY,,29
+CANBERRA,Deployment Area,CANBERRA,94.5,35.5
+REINDEER,Deployment Area,REINDEER,103.5,134
+MONTY,Deployment Area,MONTY,100,29
 CHISEL,Deployment Area,CHISEL,104.5,116.5
 ATILA,Deployment Area,ATILA,112,117
 POTLAND,Deployment Area,POTLAND,119,120.5
