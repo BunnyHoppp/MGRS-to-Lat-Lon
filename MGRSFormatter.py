@@ -18,9 +18,22 @@ class MGRSFormatter:
             "015": Latitude 101.5 -> remove the first 1 (-100) and take out the decimal (*10)
             "030": Longitude 103
 
-        Reference:
-        https://mappingsupport.com/p2/gissurfer.php?center=14SQH05239974&zoom=4&basemap=USA_basemap
-        https://www.maptools.com/tutorials/mgrs/quick_guide
+    Precision:
+    10,000m - 56K KV 1 1
+    1000m   - 56K KV 10 10
+    100m    - 56K KV 120 340
+    10m     - 56K KV 1233 3453
+    1m      - 56K KV 12343 45673
+
+    Static Attributes:
+    Grid_zone: This is the first 3 characters of the MGRS String. 56K is standard for the relevant map
+    Accuracy: This shows the number of characters we need for the values in the last 2 segments of the MGRS String
+    Accuracy of 3 means the precision is at 100m. Eg of MGRS String is 56K KV 120 340.
+
+
+    Reference:
+    https://mappingsupport.com/p2/gissurfer.php?center=14SQH05239974&zoom=4&basemap=USA_basemap
+    https://www.maptools.com/tutorials/mgrs/quick_guide
     """
 
     Grid_Zone = "56K"
@@ -38,6 +51,7 @@ class MGRSFormatter:
         Returns:
             result: a list of mgrs_string
         """
+        
         number_of_points = len(dataframe)
         result = list()
         for i in range(number_of_points):
@@ -61,11 +75,13 @@ class MGRSFormatter:
         Steps to generate the output:
             1. Initialize result_string with the Grid Zone.
             2. Determine square_id (100,000 meter Square ID).
-            3. Determine a string of numerical values representing the 100-meter square where the point lies using latlon_tostring.
+            3. Determine a string of numerical values representing the 100-meter square where the point lies
+                using latlon_tostring.
                - Both latitude and longitude are evaluated individually.
             4. Add to result_string in this sequence: square_id, longitude, latitude.
                - Note: result_string is already initialized with Grid Zone from Step 1.
         """
+
         if pd.isna(latitude) or pd.isna(longitude):
             return None
         result_string = MGRSFormatter.Grid_Zone

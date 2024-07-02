@@ -95,7 +95,6 @@ class main:
 
 
 if __name__ == '__main__':
-    """ Testing
-    """
+    #Test run
     thisrun = main('input/Test.csv')
     thisrun.run_whole_thing()

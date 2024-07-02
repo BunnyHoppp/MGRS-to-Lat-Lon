@@ -3,23 +3,26 @@ import mgrs
 
 class MGRSConverter:
     """ Convert MGRS to (Lat,Lon)
-    Attributes: mgrs_obj
-    """
-    """
+
+    Attributes:
+        mgrs_obj: the mgrs object initialised.
+
     Convert mgrs (string) into mgrs_obj
     """
+
     mgrs_obj = mgrs.MGRS()
 
     @staticmethod
     def mgrs_converter(mgrs_list):
-        """Convert a list of MGRS coordinates to a list of (Latitude, Longitude) using a helper function mgrs_tolatlon
+        """Convert a List of MGRS coordinates to a List of (Latitude, Longitude) using a helper function mgrs_tolatlon
 
         Args:
-            mgrs_list: a list of MGRS coordinates
+            mgrs_list: a List of MGRS coordinates
 
         Returns:
-             result_list: a list of (Latitude, Longitude)
+            result_list: a List of (Latitude, Longitude)
         """
+
         list_len = len(mgrs_list)
         result_list = list()
         for i in range(list_len):
@@ -38,6 +41,7 @@ class MGRSConverter:
         Returns:
             result: (Latitude, Longitude)
         """
+
         if mgrs_string == None:
             return None
         result = MGRSConverter.mgrs_obj.toLatLon(mgrs_string)
