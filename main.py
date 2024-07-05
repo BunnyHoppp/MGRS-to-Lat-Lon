@@ -106,5 +106,5 @@ class main:
 
 if __name__ == '__main__':
     #Test run
-    thisrun = main('input/Test.csv')
+    thisrun = main('input/Deployment areas.csv')
     thisrun.run_whole_thing()
