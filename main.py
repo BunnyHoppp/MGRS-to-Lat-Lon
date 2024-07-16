@@ -1,6 +1,7 @@
 from DataFrameHandler import DataFrameHandler
 from MGRSConverter import MGRSConverter
 from MGRSFormatter import MGRSFormatter
+import sys
 
 
 class main:
@@ -106,5 +107,6 @@ class main:
 
 if __name__ == '__main__':
     #Test run
-    thisrun = main('input/Deployment areas.csv')
+    input_file = sys.argv[1]
+    thisrun = main(input_file)
     thisrun.run_whole_thing()
