@@ -1,0 +1,391 @@
+﻿Component ID,Component Type,Deployment Area,Risky,Longitude,Latitude,Point1,Point2,Road Geometric,Lightning,WBGT,Visibility,,
+Canberra,Deployment Area,Canberra,,94.75,135.28,,,,,,,,
+Reindeer,Deployment Area,Reindeer,,103.5,134,,,,,,,,
+Monty,Deployment Area,Monty,,100.17,129,,,,,,,,
+Potland,Deployment Area,Potland,,120.5,119,,,,,,,,
+Chisel,Deployment Area,Chisel,,104.81,116.63,,,,,,,,
+Atila,Deployment Area,Atila,,111.9,116.7,,,,,,,,
+Sundra,Deployment Area,Sundra,,110.5,112.3,,,,,,,,
+N125,Deployment Ground,Sundra,,111.07,111.5,,,,,,,,
+N123,Rendezvous Point,Sundra,,111.42,110.48,,,,,,,,
+Adam,Deployment Area,Adam,,120.46,113.5,,,,,,,,
+Jerome,Deployment Area,Jerome,,123.77,114.75,,,,,,,,
+Camphor,Deployment Area,Camphor,,123.92,112.16,,,,,,,,
+Dorset,Deployment Area,Dorset,,128.54,112.67,,,,,,,,
+Oxford,Deployment Area,Oxford,,128.38,110.33,,,,,,,,
+Normandy,Deployment Area,Normandy,,101.15,108.5,,,,,,,,
+Napolean,Deployment Area,Napolean,,108.75,107.2,,,,,,,,
+Dallas,Deployment Area,Dallas,,101.37,102.86,,,,,,,,
+Lester,Deployment Area,Lester,,116.33,101.06,,,,,,,,
+N118,Rendezvous Point,Lester,,115.68,102.66,,,,,,,,
+N58,Deployment Ground,Lester,,116,101.76,,,,,,,,
+C1,Deployment Ground,Lester,,116.57,101.17,,,,,,,,
+C2,Deployment Ground,Lester,,116.84,100.17,,,,,,,,
+C106,Rendezvous Point,Lester,,117.31,99.59,,,,,,,,
+Lily,Deployment Area,Lily,,131.93,102.93,,,,,,,,
+N56,Deployment Ground,Lily,,131.12,104.19,,,,,,,,
+N57,Deployment Ground,Lily,,131.59,103.31,,,,,,,,
+C9,Deployment Ground,Lily,,131.35,102.37,,,,,,,,
+C129,Rendezvous Point,Lily,,130.75,101.31,,,,,,,,
+Macbeth,Deployment Area,Macbeth,,136.75,100.06,,,,,,,,
+Liston,Deployment Area,Liston,,131.33,96.41,,,,,,,,
+C126,Deployment Ground,Liston,,131.8,97.42,,,,,,,,
+C125,Rendezvous Point,Liston,,131.33,96.53,,,,,,,,
+Bihar,Deployment Area,Bihar,,141.23,97.7,,,,,,,,
+Nato,Deployment Area,Nato,,139.93,94.64,,,,,,,,
+C26,Deployment Ground,Nato,,140.4,94.78,,,,,,,,
+C25,Rendezvous Point,Nato,,138.66,93.71,,,,,,,,
+Daisy,Deployment Area,Daisy,,101.72,93.8,,,,,,,,
+Ottawa,Deployment Area,Ottawa,,107.63,94.7,,,,,,,,
+Windy,Deployment Area,Windy,,116.89,93.29,,,,,,,,
+C103,Rendezvous Point,Windy,,116.41,97.29,,,,,,,,
+C102,Deployment Ground,Windy,,115.72,96.35,,,,,,,,
+C101,Deployment Ground,Windy,,116.16,95.25,,,,,,,,
+C100,Deployment Ground,Windy,,116.22,94.17,,,,,,,,
+C136,Deployment Ground,Windy,,117.05,93.23,,,,,,,,
+C135,Rendezvous Point,Windy,,117.61,91.76,,,,,,,,
+Palmbeach,Deployment Area,Palmbeach,,130.89,91.17,,,,,,,,
+C121,Deployment Ground,Palmbeach,,130.94,91.05,,,,,,,,
+Francis,Deployment Area,Francis,,161.14,90.61,,,,,,,,
+Kim,Deployment Area,Kim,,171.87,92.07,,,,,,,,
+Lancer,Deployment Area,Lancer,,106.93,86.14,,,,,,,,
+Paladin,Deployment Area,Paladin,,112.12,87.62,,,,,,,,
+Cartier,Deployment Area,Cartier,TRUE,119.81,85.93,,,,,,,,
+C130,Rendezvous Point,Cartier,,118.75,87.25,,,,,,,,
+C97,Deployment Ground,Cartier,,118.56,86.93,,,,,,,,
+C98,Deployment Ground,Cartier,,119.87,86.33,,,,,,,,
+C99,Deployment Ground,Cartier,,119.88,85.93,,,,,,,,
+C96,Deployment Ground,Cartier,,120.06,85.56,,,,,,,,
+C94,Rendezvous Point,Cartier,,119.25,85.4,,,,,,,,
+C95,Deployment Ground,Cartier,,119.56,84.6,,,,,,,,
+C64,Rendezvous Point,Cartier,,120.12,83.8,,,,,,,,
+Vermont,Deployment Area,Vermont,TRUE,127.72,87.06,,,,,,,,
+C115,Deployment Ground,Vermont,,127.56,86.43,,,,,,,,
+Kennex,Deployment Area,Kennex,TRUE,133.77,85.88,,,,,,,,
+R60,Rendezvous Point,Kennex,,131.88,85.12,,,,,,,,
+R61,Deployment Ground,Kennex,,132.05,85.11,,,,,,,,
+R63,Deployment Ground,Kennex,,133,85.25,,,,,,,,
+C42,Deployment Ground,Kennex,,133.05,84.87,,,,,,,,
+C43,Rendezvous Point,Kennex,,132.66,84.23,,,,,,,,
+C41,Deployment Ground,Kennex,,133.24,85.37,,,,,,,,
+C40,Deployment Ground,Kennex,,133.41,85.75,,,,,,,,
+C37,Deployment Ground,Kennex,,134.05,86.33,,,,,,,,
+C38,Rendezvous Point,Kennex,,133.58,86.56,,,,,,,,
+C36,Deployment Ground,Kennex,,134.41,86.56,,,,,,,,
+C35,Deployment Ground,Kennex,,134.76,87.12,,,,,,,,
+C34,Rendezvous Point,Kennex,,135.17,87.75,,,,,,,,
+Yardley,Deployment Area,Yardley,,136.89,89.77,,,,,,,,
+C30,Rendezvous Point,Yardley,,136.94,88.88,,,,,,,,
+C31,Rendezvous Point,Yardley,,137.47,88.77,,,,,,,,
+C29,Deployment Ground,Yardley,,137.05,89.33,,,,,,,,
+C28,Rendezvous Point,Yardley,,137.36,90.38,,,,,,,,
+Rasputin,Deployment Area,Rasputin,,140.85,87.85,,,,,,,,
+C32,Rendezvous Point,Rasputin,,138.21,88.46,,,,,,,,
+E85,Deployment Ground,Rasputin,,139.04,88.37,,,,,,,,
+E84,Deployment Ground,Rasputin,,139.6,88.29,,,,,,,,
+E83,Deployment Ground,Rasputin,,140.32,88.08,,,,,,,,
+E82,Deployment Ground,Rasputin,,140.92,87.91,,,,,,,,
+E81,Deployment Ground,Rasputin,,141.36,87.7,,,,,,,,
+E80,Deployment Ground,Rasputin,,141.8,87.5,,,,,,,,
+E79,Deployment Ground,Rasputin,,142.16,87.2,,,,,,,,
+E78,Deployment Ground,Rasputin,,142.56,86.91,,,,,,,,
+E77,Rendezvous Point,Rasputin,,143.36,86.83,,,,,,,,
+Pelican,Deployment Area,Pelican,,107,79.8,,,,,,,,
+C69,Camp,Pelican,,106.9,79.36,,,,,,,,
+Serpentine,Deployment Area,Serpentine,,113.81,81.57,,,,,,,,
+C66,Rendezvous Point,Serpentine,,113.07,81.52,,,,,,,,
+C88,Rendezvous Point,Serpentine,,113.34,81.5,,,,,,,,
+C87,Deployment Ground,Serpentine,,113.55,81.64,,,,,,,,
+Melody,Deployment Area,Melody,,121.12,80.2,,,,,,,,
+C62,Rendezvous Point,Melody,,121.23,80.62,,,,,,,,
+C61,Deployment Ground,Melody,,121.7,80.06,,,,,,,,
+C92,Deployment Ground,Melody,,122.25,79.86,,,,,,,,
+C91,Rendezvous Point,Melody,,122.81,79.93,,,,,,,,
+C60,Deployment Ground,Melody,,121.76,79.53,,,,,,,,
+C59,Rendezvous Point,Melody,,121.64,79.06,,,,,,,,
+Spike,Deployment Area,Spike,TRUE,128.75,79.83,,,,,,,,
+C55,Rendezvous Point,Spike,,126.05,80.5,,,,,,,,
+C54,Deployment Ground,Spike,,127.15,80.27,,,,,,,,
+C53,Deployment Ground,Spike,,127.42,79.88,,,,,,,,
+C52,Deployment Ground,Spike,,127.84,79.55,,,,,,,,
+C51,Deployment Ground,Spike,,128.42,79.52,,,,,,,,
+S1,Deployment Ground,Spike,,128.52,79.2,,,,,,,,
+S2,Deployment Ground,Spike,,128.42,78.52,,,,,,,,
+S3,Deployment Ground,Spike,,128.71,77.78,,,,,,,,
+S4,Rendezvous Point,Spike,,128.76,76.89,,,,,,,,
+C50,Deployment Ground,Spike,,128.42,80.47,,,,,,,,
+C49,Deployment Ground,Spike,,129.19,81.2,,,,,,,,
+C48,Rendezvous Point,Spike,,129.8,81.78,,,,,,,,
+Malito,Deployment Area,Malito,,146.93,82.66,,,,,,,,
+E76,Rendezvous Point,Malito,,143.93,85.85,,,,,,,,
+E109,Deployment Ground,Malito,,144.44,85.82,,,,,,,,
+E86,Rendezvous Point,Malito,,144.96,85.41,,,,,,,,
+E75,Deployment Ground,Malito,,144.04,85.5,,,,,,,,
+E74,Deployment Ground,Malito,,144.56,85.12,,,,,,,,
+E73,Deployment Ground,Malito,,144.96,84.54,,,,,,,,
+E72,Deployment Ground,Malito,,145.37,84.12,,,,,,,,
+E71,Deployment Ground,Malito,,145.92,83.66,,,,,,,,
+E70,Deployment Ground,Malito,,146.16,82.75,,,,,,,,
+E69,Deployment Ground,Malito,,146.52,82.37,,,,,,,,
+E68,Deployment Ground,Malito,,147.44,81.45,,,,,,,,
+E67,Rendezvous Point,Malito,,148.4,80.91,,,,,,,,
+E66,Rendezvous Point,Malito,,148.04,80.41,,,,,,,,
+Wilson,Deployment Area,Wilson,,158.56,83.25,,,,,,,,
+E30,Deployment Ground,Wilson,,159.32,84.08,,,,,,,,
+E31,Deployment Ground,Wilson,,158.6,84.04,,,,,,,,
+E14,Rendezvous Point,Wilson,,157.22,84.04,,,,,,,,
+E32,Rendezvous Point,Wilson,,156.48,83.62,,,,,,,,
+Cabin,Deployment Area,Cabin,,108.21,75.66,,,,,,,,
+E999,Deployment Ground,Cabin,,106.5,76.89,,,,,,,,
+Oscar,Deployment Area,Oscar,,106.37,73.37,,,,,,,,
+Caesar,Deployment Area,Caesar,,112.37,73.42,,,,,,,,
+Yaohan,Deployment Area,Yaohan,,123.93,75.46,,,,,,,,
+S70,Rendezvous Point,Yaohan,,122.12,78.41,,,,,,,,
+S71,Deployment Ground,Yaohan,,122.24,78,,,,,,,,
+S72,Deployment Ground,Yaohan,,122.4,77.37,,,,,,,,
+S73,Deployment Ground,Yaohan,,123.08,76.91,,,,,,,,
+S74,Deployment Ground,Yaohan,,123.08,75.7,,,,,,,,
+S75,Deployment Ground,Yaohan,,126,74.5,,,,,,,,
+S76,Rendezvous Point,Yaohan,,126.32,74.08,,,,,,,,
+Metro,Deployment Area,Metro,,128.52,72.58,,,,,,,,
+Winsor,Deployment Area,Winsor,,146.2,73.87,,,,,,,,
+E57,Rendezvous Point,Winsor,,144.44,71.56,,,,,,,,
+E58,Deployment Ground,Winsor,,144.45,72.26,,,,,,,,
+E59,Deployment Ground,Winsor,,144.88,72.56,,,,,,,,
+E60,Deployment Ground,Winsor,,145.28,72.56,,,,,,,,
+E61,Deployment Ground,Winsor,,145.4,73.43,,,,,,,,
+E62,Rendezvous Point,Winsor,,145.84,74.26,,,,,,,,
+E56,Deployment Ground,Winsor,,145.8,73.13,,,,,,,,
+E55,Deployment Ground,Winsor,,146.24,73.65,,,,,,,,
+E54,Deployment Ground,Winsor,,147.04,74.43,,,,,,,,
+E53,Deployment Ground,Winsor,,146.92,75.17,,,,,,,,
+E52,Rendezvous Point,Winsor,,147.04,76.08,,,,,,,,
+Tyro,Deployment Area,Tyro,,148.12,78.34,,,,,,,,
+E64,Deployment Ground,Tyro,,148.08,78.13,,,,,,,,
+E50,Deployment Ground,Tyro,,148.76,77.6,,,,,,,,
+Golan,Deployment Area,Golan,,152.92,80.17,,,,,,,,
+E49,Rendezvous Point,Golan,,149.56,78.78,,,,,,,,
+E48,Deployment Ground,Golan,,150.2,79,,,,,,,,
+E47,Rendezvous Point,Golan,,151.08,78.65,,,,,,,,
+E103,Rendezvous Point,Golan,,150.68,79.69,,,,,,,,
+E102,Deployment Ground,Golan,,151.6,79.82,,,,,,,,
+E101,Deployment Ground,Golan,,152.4,80.04,,,,,,,,
+E100,Deployment Ground,Golan,,153.2,80.39,,,,,,,,
+E99,Deployment Ground,Golan,,153.84,80.6,,,,,,,,
+E96,Rendezvous Point,Golan,,153.56,80.82,,,,,,,,
+E98,Deployment Ground,Golan,,154.52,80.78,,,,,,,,
+E36,Deployment Ground,Golan,,155.48,80.65,,,,,,,,
+E35,Rendezvous Point,Golan,,155.44,81.21,,,,,,,,
+E37,Rendezvous Point,Golan,,155.92,80.08,,,,,,,,
+Regata,Deployment Area,Regata,,124.2,70.78,,,,,,,,
+S50,Deployment Ground,Regata,,123.18,71.42,,,,,,,,
+Pembroke,Deployment Area,Pembroke,,134.31,70.58,,,,,,,,
+Aberdeen,Deployment Area,Aberdeen,,102.4,66.21,,,,,,,,
+Hong Kong,Deployment Area,Hong Kong,,106.14,63.21,,,,,,,,
+Nimrod,Deployment Area,Nimrod,,109.06,60.71,,,,,,,,
+Petticot,Deployment Area,Petticot,,122.5,66.35,,,,,,,,
+Betty,Deployment Area,Betty,,136.86,63.92,,,,,,,,
+Pegasus,Deployment Area,Pegasus,,145.06,66.85,,,,,,,,
+Hitchcock,Deployment Area,Hitchcock,,161.42,67,,,,,,,,
+Lawrence,Deployment Area,Lawrence,,162.42,62.62,,,,,,,,
+E1,,,,141.7,96.25,,,,,,,,
+E2,,,,143.6,95.95,,,,,,,,
+E3,,,,145.8,95.7,,,,,,,,
+E4,,,,147.85,96.75,,,,,,,,
+E5,,,,148.45,96.05,,,,,,,,
+E6,,,,148.85,95.15,,,,,,,,
+E7,,,,149.95,95.2,,,,,,,,
+E8,,,,151.9,93.5,,,,,,,,
+E9,,,,152.7,91.6,,,,,,,,
+E10,,,,153.05,90.1,,,,,,,,
+E11,,,,156.25,87.45,,,,,,,,
+E12,,,,156.8,85.8,,,,,,,,
+E13,,,,157.4,84.95,,,,,,,,
+E87,,,,145.95,85.05,,,,,,,,
+E88,,,,146.75,,,,,,,,,
+E89,,,,,,,,,,,,,
+E90,,,,,,,,,,,,,
+E91,,,,,,,,,,,,,
+E92,,,,,,,,,,,,,
+E93,,,,,,,,,,,,,
+E94,,,,,,,,,,,,,
+E95,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+SUNDRA-LESTER,Path,,Beginner,,,N123,N118,8.905054744,,111.42,110.48,115.68,102.66
+LESTER-WINDY,Path,,Beginner,,,C106,C103,2.469817807,,117.31,99.59,116.41,97.29
+WINDY-VERMONT,Path,,Beginner,,,C135,C115,11.28766583,,117.61,91.76,127.56,86.43
+WINDY-CARTIER,Path,,Beginner,,,C135,C130,4.651849095,,117.61,91.76,118.75,87.25
+CARTIER-SERPENTINE,Path,,Beginner,,,C94,C87,6.828440525,,119.25,85.4,113.55,81.64
+CARTIER-MELODY,Path,,Beginner,,,C64,C62,3.368159735,,120.12,83.8,121.23,80.62
+SERPENTINE-CABIN,Path,,Beginner,,,C66,E999,8.037524495,,113.07,81.52,106.5,76.89
+PELICAN-CABIN,Path,,Beginner,,,C69,E999,2.50217905,,106.9,79.36,106.5,76.89
+MELODY-SPIKE,Path,,Beginner,,,C91,C55,3.28975683,,122.81,79.93,126.05,80.5
+MELODY-YAOHAN,Path,,Beginner,,,C59,S70,0.808022277,,121.64,79.06,122.12,78.41
+YAOHAN-SPIKE,Path,,Beginner,,,S76,S4,3.721518507,,126.32,74.08,128.76,76.89
+YAOHAN-REGATA,Path,,Beginner,,,S76,S50,4.115239969,,126.32,74.08,123.18,71.42
+SPIKE-KENNEX,Path,,Beginner,,,C48,C43,3.765912904,,129.8,81.78,132.66,84.23
+VERMONT-KENNEX,Path,,Beginner,,,C115,R60,4.514255199,,127.56,86.43,131.88,85.12
+KENNEX-PALMBEACH,Path,,Beginner,,,C38,C121,5.208617859,,133.58,86.56,130.94,91.05
+PALMBEACH-LISTON,Path,,Beginner,,,C121,C125,5.493860209,,130.94,91.05,131.33,96.53
+LISTON-LILY,Path,,Beginner,,,C126,C129,4.029218286,,131.8,97.42,130.75,101.31
+KENNEX-YARDLEY,Path,,Beginner,,,C34,C30,2.09995238,,135.17,87.75,136.94,88.88
+YARDLEY-RASPUTIN,Path,,Beginner,,,C31,C32,0.802309167,,137.47,88.77,138.21,88.46
+YARDLEY-NATO,Path,,Beginner,,,C28,C25,3.574758733,,137.36,90.38,138.66,93.71
+NATO-WILSON,Path,,Hard,,,C26,E14,19.95645259,,140.4,94.78,157.22,84.04
+RASPUTIN-MALITO,Path,,Beginner,,,E77,E76,1.133710721,,143.36,86.83,143.93,85.85
+MALITO-GOLAN,Path,,Intermediate,,,E86,E96,9.748235738,,144.96,85.41,153.56,80.82
+MALITO-GOLAN,Path,,Beginner,,,E67,E103,2.585884762,,148.4,80.91,150.68,79.69
+MALITO-TYRO,Path,,Beginner,,,E66,E64,2.28035085,,148.04,80.41,148.08,78.13
+TYRO-WINDSOR,Path,,Beginner,,,E64,E62,4.471520994,,148.08,78.13,145.84,74.26
+TYRO-WINDSOR,Path,,Beginner,,,E50,E52,2.295386678,,148.76,77.6,147.04,76.08
+TYRO-GOLAN,Path,,Beginner,,,E50,E49,1.425622671,,148.76,77.6,149.56,78.78
+GOLAN-GOLAN,Path,,Beginner,,,E47,E37,5.046830689,,151.08,78.65,155.92,80.08
+GOLAN-WILSON,Path,,Beginner,,,E35,E32,2.624823804,,155.44,81.21,156.48,83.62
+N125-N123,Path,SUNDRA,Beginner,,,N125,N123,,,111.07,111.5,111.42,110.48
+N118-N58,Path,LESTER,Beginner,,,N118,N58,,,115.68,102.66,116,101.76
+N58-C1,Path,LESTER,Beginner,,,N58,C1,,,116,101.76,116.57,101.17
+C1-C2,Path,LESTER,Beginner,,,C1,C2,,,116.57,101.17,116.84,100.17
+C2-C106,Path,LESTER,Beginner,,,C2,C106,,,116.84,100.17,117.31,99.59
+C103-C102,Path,WINDY,Beginner,,,C103,C102,,,116.41,97.29,115.72,96.35
+C102-C101,Path,WINDY,Beginner,,,C102,C101,,,115.72,96.35,116.16,95.25
+C101-C100,Path,WINDY,Beginner,,,C101,C100,,,116.16,95.25,116.22,94.17
+C100-C136,Path,WINDY,Beginner,,,C100,C136,,,116.22,94.17,117.05,93.23
+C136-C135,Path,WINDY,Beginner,,,C136,C135,,,117.05,93.23,117.61,91.76
+C130-C97,Path,CARTIER,Beginner,,,C130,C97,,,118.75,87.25,118.56,86.93
+C97-C98,Path,CARTIER,Beginner,,,C97,C98,,,118.56,86.93,119.87,86.33
+C98-C99,Path,CARTIER,Beginner,,,C98,C99,,,119.87,86.33,119.88,85.93
+C99-C96,Path,CARTIER,Beginner,,,C99,C96,,,119.88,85.93,120.06,85.56
+C96-C94,Path,CARTIER,Beginner,,,C96,C94,,,120.06,85.56,119.25,85.4
+C96-C95,Path,CARTIER,Beginner,,,C96,C95,,,120.06,85.56,119.56,84.6
+C95-C64,Path,CARTIER,Beginner,,,C95,C64,,,119.56,84.6,120.12,83.8
+C66-C87,Path,SERPENTINE,Beginner,,,C66,C87,,,113.07,81.52,113.55,81.64
+C87-C88,Path,SERPENTINE,Beginner,,,C87,C88,,,113.55,81.64,113.34,81.5
+C62-C61,Path,MELODY,Beginner,,,C62,C61,,,121.23,80.62,121.7,80.06
+C61-C92,Path,MELODY,Beginner,,,C61,C92,,,121.7,80.06,122.25,79.86
+C92-C91,Path,MELODY,Beginner,,,C92,C91,,,122.25,79.86,122.81,79.93
+C61-C60,Path,MELODY,Beginner,,,C61,C60,,,121.7,80.06,121.76,79.53
+C60-C59,Path,MELODY,Beginner,,,C60,C59,,,121.76,79.53,121.64,79.06
+C55-C54,Path,SPIKE,Beginner,,,C55,C54,,,126.05,80.5,127.15,80.27
+C54-C53,Path,SPIKE,Beginner,,,C54,C53,,,127.15,80.27,127.42,79.88
+C53-C52,Path,SPIKE,Beginner,,,C53,C52,,,127.42,79.88,127.84,79.55
+C52-C51,Path,SPIKE,Beginner,,,C52,C51,,,127.84,79.55,128.42,79.52
+C51-S1,Path,SPIKE,Beginner,,,C51,S1,,,128.42,79.52,128.52,79.2
+S1-S2,Path,SPIKE,Beginner,,,S1,S2,,,128.52,79.2,128.42,78.52
+S2-S3,Path,SPIKE,Beginner,,,S2,S3,,,128.42,78.52,128.71,77.78
+S3-S4,Path,SPIKE,Beginner,,,S3,S4,,,128.71,77.78,128.76,76.89
+C51-C50,Path,SPIKE,Beginner,,,C51,C50,,,128.42,79.52,128.42,80.47
+C50-C49,Path,SPIKE,Beginner,,,C50,C49,,,128.42,80.47,129.19,81.2
+C49-C48,Path,SPIKE,Beginner,,,C49,C48,,,129.19,81.2,129.8,81.78
+S70-S71,Path,YAOHAN,Beginner,,,S70,S71,,,122.12,78.41,122.24,78
+S71-S72,Path,YAOHAN,Beginner,,,S71,S72,,,122.24,78,122.4,77.37
+S72-S73,Path,YAOHAN,Beginner,,,S72,S73,,,122.4,77.37,123.08,76.91
+S73-S74,Path,YAOHAN,Beginner,,,S73,S74,,,123.08,76.91,123.08,75.7
+S74-S75,Path,YAOHAN,Beginner,,,S74,S75,,,123.08,75.7,126,74.5
+S74-S75,Path,YAOHAN,Hard,,,S74,S75,,,123.08,75.7,126,74.5
+S75-S76,Path,YAOHAN,Beginner,,,S75,S76,,,126,74.5,126.32,74.08
+R60-R61,Path,KENNEX,Beginner,,,R60,R61,,,131.88,85.12,132.05,85.11
+R61-R63,Path,KENNEX,Beginner,,,R61,R63,,,132.05,85.11,133,85.25
+R63-C42,Path,KENNEX,Beginner,,,R63,C42,,,133,85.25,133.05,84.87
+C42-C43,Path,KENNEX,Beginner,,,C42,C43,,,133.05,84.87,132.66,84.23
+C42-C41,Path,KENNEX,Beginner,,,C42,C41,,,133.05,84.87,133.24,85.37
+C41-C40,Path,KENNEX,Beginner,,,C41,C40,,,133.24,85.37,133.41,85.75
+C40-C37,Path,KENNEX,Beginner,,,C40,C37,,,133.41,85.75,134.05,86.33
+C37-C38,Path,KENNEX,Beginner,,,C37,C38,,,134.05,86.33,133.58,86.56
+C37-C36,Path,KENNEX,Beginner,,,C37,C36,,,134.05,86.33,134.41,86.56
+C36-C35,Path,KENNEX,Beginner,,,C36,C35,,,134.41,86.56,134.76,87.12
+C35-C34,Path,KENNEX,Beginner,,,C35,C34,,,134.76,87.12,135.17,87.75
+C126-C125,Path,LISTON,Beginner,,,C126,C125,,,131.8,97.42,131.33,96.53
+C129-C9,Path,LILY,Beginner,,,C129,C9,,,130.75,101.31,131.35,102.37
+C9-N57,Path,LILY,Beginner,,,C9,N57,,,131.35,102.37,131.59,103.31
+N57-N56,Path,LILY,Beginner,,,N57,N56,,,131.59,103.31,131.12,104.19
+C30-C31,Path,YARDLEY,Beginner,,,C30,C31,,,136.94,88.88,137.47,88.77
+C30-C29,Path,YARDLEY,Beginner,,,C30,C29,,,136.94,88.88,137.05,89.33
+C29-C28,Path,YARDLEY,Beginner,,,C29,C28,,,137.05,89.33,137.36,90.38
+C25-C26,Path,NATO,Intermediate,,,C25,C26,,,138.66,93.71,140.4,94.78
+C32-E85,Path,RASPUTIN,Beginner,,,C32,E85,,,138.21,88.46,139.04,88.37
+E85-E84,Path,RASPUTIN,Beginner,,,E85,E84,,,139.04,88.37,139.6,88.29
+E84-E83,Path,RASPUTIN,Beginner,,,E84,E83,,,139.6,88.29,140.32,88.08
+E83-E82,Path,RASPUTIN,Beginner,,,E83,E82,,,140.32,88.08,140.92,87.91
+E82-E81,Path,RASPUTIN,Beginner,,,E82,E81,,,140.92,87.91,141.36,87.7
+E81-E80,Path,RASPUTIN,Beginner,,,E81,E80,,,141.36,87.7,141.8,87.5
+E80-E79,Path,RASPUTIN,Beginner,,,E80,E79,,,141.8,87.5,142.16,87.2
+E79-E78,Path,RASPUTIN,Beginner,,,E79,E78,,,142.16,87.2,142.56,86.91
+E78-E77,Path,RASPUTIN,Beginner,,,E78,E77,,,142.56,86.91,143.36,86.83
+E76-E75,Path,MALITO,Beginner,,,E76,E75,,,143.93,85.85,144.04,85.5
+E76-E109,Path,MALITO,Hard,,,E76,E109,,,143.93,85.85,144.44,85.82
+E109-E86,Path,MALITO,Hard,,,E109,E86,,,144.44,85.82,144.96,85.41
+E75-E74,Path,MALITO,Beginner,,,E75,E74,,,144.04,85.5,144.56,85.12
+E74-E73,Path,MALITO,Beginner,,,E74,E73,,,144.56,85.12,144.96,84.54
+E73-E72,Path,MALITO,Beginner,,,E73,E72,,,144.96,84.54,145.37,84.12
+E72-E71,Path,MALITO,Beginner,,,E72,E71,,,145.37,84.12,145.92,83.66
+E71-E70,Path,MALITO,Beginner,,,E71,E70,,,145.92,83.66,146.16,82.75
+E70-E69,Path,MALITO,Beginner,,,E70,E69,,,146.16,82.75,146.52,82.37
+E69-E68,Path,MALITO,Beginner,,,E69,E68,,,146.52,82.37,147.44,81.45
+E68-E67,Path,MALITO,Beginner,,,E68,E67,,,147.44,81.45,148.4,80.91
+E67-E66,Path,MALITO,Beginner,,,E67,E66,,,148.4,80.91,148.04,80.41
+E62-E61,Path,WINDSOR,Beginner,,,E62,E61,,,145.84,74.26,145.4,73.43
+E61-E59,Path,WINDSOR,Beginner,,,E61,E59,,,145.4,73.43,144.88,72.56
+E59-E58,Path,WINDSOR,Beginner,,,E59,E58,,,144.88,72.56,144.45,72.26
+E58-E57,Path,WINDSOR,Beginner,,,E58,E57,,,144.45,72.26,144.44,71.56
+E59-E60,Path,WINDSOR,Beginner,,,E59,E60,,,144.88,72.56,145.28,72.56
+E60-E56,Path,WINDSOR,Beginner,,,E60,E56,,,145.28,72.56,145.8,73.13
+E56-E55,Path,WINDSOR,Beginner,,,E56,E55,,,145.8,73.13,146.24,73.65
+E55-E54,Path,WINDSOR,Beginner,,,E55,E54,,,146.24,73.65,147.04,74.43
+E54-E53,Path,WINDSOR,Beginner,,,E54,E53,,,147.04,74.43,146.92,75.17
+E53-E52,Path,WINDSOR,Beginner,,,E53,E52,,,146.92,75.17,147.04,76.08
+E49-E48,Path,GOLAN,Beginner,,,E49,E48,,,149.56,78.78,150.2,79
+E48-E47,Path,GOLAN,Beginner,,,E48,E47,,,150.2,79,151.08,78.65
+E48-E103,Path,GOLAN,Beginner,,,E48,E103,,,150.2,79,150.68,79.69
+E103-E102,Path,GOLAN,Beginner,,,E103,E102,,,150.68,79.69,151.6,79.82
+E102-E101,Path,GOLAN,Beginner,,,E102,E101,,,151.6,79.82,152.4,80.04
+E101-E100,Path,GOLAN,Beginner,,,E101,E100,,,152.4,80.04,153.2,80.39
+E100-E99,Path,GOLAN,Beginner,,,E100,E99,,,153.2,80.39,153.84,80.6
+E99-E96,Path,GOLAN,Hard,,,E99,E96,,,153.84,80.6,153.56,80.82
+E99-E98,Path,GOLAN,Beginner,,,E99,E98,,,153.84,80.6,154.52,80.78
+E98-E36,Path,GOLAN,Beginner,,,E98,E36,,,154.52,80.78,155.48,80.65
+E36-E35,Path,GOLAN,Beginner,,,E36,E35,,,155.48,80.65,155.44,81.21
+E36-E37,Path,GOLAN,Beginner,,,E36,E37,,,155.48,80.65,155.92,80.08
+E32-E14,Path,WILSON,Beginner,,,E32,E14,,,156.48,83.62,157.22,84.04
+E14-E31,Path,WILSON,Beginner,,,E14,E31,,,157.22,84.04,158.6,84.04
+E31-E30,Path,WILSON,Beginner,,,E31,E30,,,158.6,84.04,159.32,84.08
